@@ -1,3 +1,4 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Colours */
@@ -11,6 +12,9 @@
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .bg-color-work-history {
@@ -170,11 +174,20 @@ header {
 }
 
 /* Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
 footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;
 }
 
 .cv-pdf i {
