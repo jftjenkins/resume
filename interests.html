@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="row no-gutters">
-        <a class="col-md-4 logo" href="index.html"></a>
+        <a href="index.html" class="col-md-4 logo"> </a>
         <div class="col-md-8">
           <div class="row no-gutters bg-color-name-title">
             <div class="col heading">
@@ -41,37 +41,37 @@
           <div class="row no-gutters">
             <div class="col">
               <ul id="nav" class="list-inline menucontainer row">
-                <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-home menuitem">
                   <a href="index.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-home" aria-hidden="true"></i
                     ><span>Home</span></a
                   >
                 </li>
-                <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-resume menuitem">
                   <a href="resume.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-graduation-cap" aria-hidden="true"></i
                     ><span>Resume</span></a
                   >
                 </li>
-                <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-contact menuitem">
                   <a href="contact.html" class="hvr-sweep-to-bottom"
-                    ><i class="fa fa-commenting-o" aria-hidden="true"></i
+                    ><i class="fa fa-comment-o" aria-hidden="true"></i
                     ><span>Contact</span></a
                   >
                 </li>
-                <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-interests menuitem">
                   <a href="interests.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-users" aria-hidden="true"></i
                     ><span>Interests</span></a
                   >
                 </li>
-                <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-github menuitem">
                   <a href="github.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-github" aria-hidden="true"></i
                     ><span>GitHub</span></a
                   >
                 </li>
-                <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
+                <li class="col-6 col-sm-2 ui-menu-color-download menuitem">
                   <a
                     href="assets/cv/CV Joseph Jenkins-Baille.pdf"
                     target="_blank"
@@ -87,47 +87,60 @@
       </div>
     </header>
     <section class="container-fluid">
-      <div class="row bg-color-contact">
-        <div class="col">
-          <h3 class="contact-heading uppercase text-center">
-            Got a project in mind?
-          </h3>
-          <h5 class="uppercase text-center">Let's work together!</h5>
-
-          <div class="center-form">
-            <form>
-              <input
-                type="text"
-                name="name"
-                id="fullname"
-                class="form-control"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                id="emailaddress"
-                class="form-control"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                rows="5"
-                name="projectsummary"
-                id="projectsummary"
-                class="form-control"
-                placeholder="Project description"
-                required
-              ></textarea>
-              <div class="form-row text-center">
-                <div class="col">
-                  <button type="submit" class="btn btn-secondary">
-                    Send Project Request
-                  </button>
+      <div class="row">
+        <div class="col-md-4 bg-color-conferences section-column">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-heading uppercase">
+                Conferences And Meetups Attended
+              </h3>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+        <div class="col-md-8 bg-color-groups">
+          <div class="row">
+            <div class="col">
+              <h3 class="section-heading uppercase">My Groups And Societies</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <h4 class="three-reasons-heading uppercase"></h4>
+                  <p></p>
                 </div>
               </div>
-            </form>
+            </div>
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <h4 class="three-reasons-heading uppercase"></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <h4 class="three-reasons-heading uppercase"></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <h4 class="three-reasons-heading uppercase"></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,5 +190,12 @@
         </div>
       </div>
     </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"
+    ></script>
+    <script src="assets/js/maps.js"></script>
   </body>
 </html>
